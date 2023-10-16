@@ -1,0 +1,33 @@
+
+
+<?php
+echo "<div class='container mt-5'> 
+		<h1>Lista de Pessoa</h1>";
+foreach ($this->view->dados as $indice => $pessoa) {
+	echo "<table class='table table-hover '>" .
+		"<tr>
+		<td>Nome Completo</td> 
+		<td>Telefone</td> 
+		<td>CPF</td> 
+		<td>Data Nascimento</td> 
+		<td>CEP</td> 
+		<td>Logadouro </td> 
+		<td>Localidade </td> 
+		<td>Bairro </td>
+		<td>UF</td>
+		<td>Complemento </td> 
+	</tr>";
+	echo "<tr>
+		<td>" . $pessoa['nome_completo'] . " </td> 
+		<td>" . $pessoa['telefone'] . "</td>
+		<td>" . $pessoa['cpf'] . "</td> 
+		<td>" . $pessoa['data_nascimento'] . " </td>
+		<td>" . $pessoa['cep'] . " </td> 
+		<td>" . $pessoa['logadouro'] . " </td> 
+		<td>" . $pessoa['localidade'] . " </td>
+		<td>" . $pessoa['bairro'] . "</td>
+		<td>" . $pessoa['uf'] . " </td> 
+		<td>" . $pessoa['complemento'] . " </td> 
+	</tr></div>";
+}
+?>
